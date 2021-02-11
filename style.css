@@ -1,12 +1,45 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Kaushan Script", cursive;
+  font-family: "Poppins", sans-serif;
 }
-
 #banner {
   background: url(images/Hero.jpg);
   background-size: cover;
-  /* Resize background image to cover the entire Container */
+  /* Resize background image to cover the entire container */
   background-position: center;
   height: 100vh;
+}
+
+.logo {
+  width: 150px;
+  position: absolute;
+  top: 4%;
+  left: 10%;
+}
+
+.banner-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 180px;
+}
+.banner-text h1 {
+  font-size: 130px;
+  font-family: "Kaushan Script", cursive;
+}
+.banner-btn {
+  margin: 70px auto 0;
+}
+
+.banner-btn a {
+  width: 150px;
+  font-family: "Kaushan Script", cursive;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: black;
+  border: 0.5px solid black;
+  border-radius: 5px;
 }
