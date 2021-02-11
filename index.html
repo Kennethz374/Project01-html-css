@@ -20,8 +20,8 @@
         <h1>Hi, I am K z</h1>
         <p>Code your way to change your life</p>
         <div class="banner-btn">
-          <a href="#"><span></span>Projects </a>
-          <a href="#"><span></span>CV</a>
+          <a href="#"><span></span>CV </a>
+          <a href="#"><span></span>Projects</a>
         </div>
         <div class="banner-btn">
           <a href="#"><span></span>Life </a>
@@ -29,5 +29,38 @@
         </div>
       </div>
     </section>
+
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">CV</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Life</a></li>
+          <li><a href="#">Notes</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="menuBtn">
+      <img src="images/menu.png" alt="Menu" id="menu" />
+    </div>
+
+    <script>
+      let menuBtn = document.getElementById("menuBtn");
+      let sideNav = document.getElementById("sideNav");
+      let menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+      menuBtn.onclick = function() {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.src = "images/close.png";
+        } else {
+          sideNav.style.right = "-250px";
+          menu.src = "images/menu.png";
+        }
+      };
+    </script>
   </body>
 </html>
