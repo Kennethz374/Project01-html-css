@@ -1,0 +1,11 @@
+{
+  "name": "html_css",
+  "version": "1.0.0",
+  "description": "a simple webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "KennethZhang",
+  "license": "ISC"
+}
