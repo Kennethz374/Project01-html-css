@@ -29,7 +29,7 @@
   font-family: "Kaushan Script", cursive;
 }
 .banner-btn {
-  margin: 70px auto 0;
+  margin: 50px auto 0;
 }
 
 .banner-btn a {
@@ -42,4 +42,25 @@
   color: black;
   border: 0.5px solid black;
   border-radius: 5px;
+  position: relative;
+  z-index: 1;
 }
+
+/* use a span tag to animate the button on hover */
+.banner-btn a span {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: -1;
+  transition: 0.5s;
+}
+.banner-btn a:hover span {
+  width: 100%;
+}
+.banner-btn a:hover {
+  color: white;
+}
+/* ------animate button */
