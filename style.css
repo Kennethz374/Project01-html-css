@@ -297,7 +297,6 @@ hr {
   width: 100px;
   font-family: "Kaushan Script", cursive;
   text-decoration: none;
-  display: inline-block;
   margin: 0 10px;
   padding: 12px 0;
   color: black;
@@ -308,14 +307,72 @@ hr {
 @media screen and (max-width: 770px) {
   .single-project {
     flex-basis: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
-  .project-desc p,
-  a {
+  .project-desc {
     font-size: 12px;
     color: white;
+  }
+  .project-btn a {
+    display: inline-block;
+    width: 35px;
+    font-family: "Kaushan Script", cursive;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 8px 0;
+    color: black;
+    border: 0.5px solid black;
+    border-radius: 2px;
   }
   hr {
     margin: 5px auto;
   }
+  .single-project:hover .project-desc {
+    bottom: 35% !important;
+    opacity: 1;
+  }
+}
+/* reference */
+#reference {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.reference-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.reference-col {
+  flex-basis: 28%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 3px #7678c5;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.reference-col p {
+  font-size: 14px;
+}
+.user {
+  display: flex;
+  margin: 20px 0;
+  align-items: center;
+}
+
+.user img {
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+.user-info small {
+  color: #7678c5;
+}
+
+.reference-col:hover {
+  transform: translateY(-15px);
 }
