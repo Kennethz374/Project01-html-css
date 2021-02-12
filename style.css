@@ -10,6 +10,7 @@
   /* Resize background image to cover the entire container */
   background-position: center;
   height: 100vh;
+  min-height: 812px;
 }
 
 .logo {
@@ -210,7 +211,7 @@ nav ul li a {
   }
 }
 
-/* projects */
+/* --------projects-------- */
 
 #projects {
   width: 100%;
@@ -227,24 +228,46 @@ nav ul li a {
 }
 
 .single-project {
-  flex-basis: 48%;
+  flex-basis: 22%;
   text-align: center;
   border-radius: 7px;
-  margin-bottom: 20px;
+  margin: 20px;
   color: white;
   position: relative;
+  border: #7678c5 solid 2px;
+}
+
+.single-project:hover {
+  scale: 1.1;
+}
+.single-project a {
+  text-decoration: none;
 }
 
 .single-project img {
   width: 100%;
   border-radius: 7px;
 }
-/* .overlay {
+.overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   border-radius: 7px;
   cursor: pointer;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), #7678c5);
-} */
+  background: linear-gradient(#7678c5, rgba(0, 0, 0, 0.2));
+  opacity: 0;
+  transition: 1s;
+}
+.single-project:hover .overlay {
+  opacity: 1;
+}
+.project-desc p,
+h3,
+hr {
+  color: black;
+}
+
+.project-desc p {
+  font-size: 14px;
+}
