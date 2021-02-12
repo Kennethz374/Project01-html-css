@@ -381,3 +381,22 @@ hr {
     flex-basis: 100%;
   }
 }
+
+/* footer contacts */
+#footer {
+  padding: 100px 0 20px;
+  background: #efefef;
+}
+.footer-row {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer-row img {
+  width: 40px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
