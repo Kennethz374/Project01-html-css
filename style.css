@@ -228,10 +228,10 @@ nav ul li a {
 }
 
 .single-project {
-  flex-basis: 22%;
+  flex-basis: 48%;
   text-align: center;
   border-radius: 7px;
-  margin: 20px;
+  margin-bottom: 20px;
   color: white;
   position: relative;
   border: #7678c5 solid 2px;
