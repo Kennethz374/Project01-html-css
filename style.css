@@ -184,3 +184,22 @@ nav ul li a {
   color: #7678c5;
   border: 1px solid #7678c5;
 }
+.cv-text p {
+  padding: 0 20px;
+  text-align: initial;
+}
+
+@media screen and (max-width: 770px) {
+  .title-text h1 {
+    font-size: 35px;
+  }
+  .cv {
+    flex-basis: 100%;
+  }
+  .cv-img {
+    flex-basis: 100%;
+  }
+  .cv-img img {
+    width: 100%;
+  }
+}
